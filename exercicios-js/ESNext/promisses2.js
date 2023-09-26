@@ -11,11 +11,24 @@ somaDoisNumeros(2, 3)
     .then(resultado => console.log(resultado))
     .catch(e => console.log(`Ocorreu um erro: ${e}`))*/
 
+/*fetch('12121') //promisse
+    .then(response => {
+       return response.json()
+    })
+    .then(
+        body => console.log(body),
+        err => console.log(`Erro específico: ${err}`))
+    .catch(err => console.log(`Ocorreu um erro: ${err}`))
+    .finally(() => {
+        console.log('deu')
+    })*/
+
 fetch('https://api.github.com/users/LucasVianaSampaio') //promisse
     .then(response => {
        return response.json()
     })
-    .then(body => console.log(body))
+    .then(
+        body => console.log(body))
     .catch(err => console.log(`Ocorreu um erro: ${err}`))
     .finally(() => {
         console.log('deu')
